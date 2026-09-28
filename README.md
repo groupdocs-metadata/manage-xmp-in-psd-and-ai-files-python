@@ -8,7 +8,7 @@
 
 ## 📖 About This Repository
 
-manage-xmp-in-psd-and-ai-files-python is a runnable Python demo that reads and writes the XMP packet inside Photoshop PSD and Illustrator AI files. It uses GroupDocs.Metadata for Python via .NET (`groupdocs-metadata-net`, pinned to 26.5) and ships with one sample of each format, so the whole flow runs the moment dependencies install. Five documented functions read the full XMP tree, the Dublin Core scheme, and the Photoshop scheme, then write copyright, creator, and keyword values back. The examples are for developers wiring Adobe assets into digital-asset-management ingestion, search, or licensing pipelines.
+manage-xmp-in-psd-and-ai-files-python is a runnable Python demo that reads and writes the XMP packet inside Photoshop PSD and Illustrator AI files. It uses GroupDocs.Metadata for Python via .NET (`groupdocs-metadata-net`, pinned to 26.9.0) and ships with one sample of each format, so the whole flow runs the moment dependencies install. Five documented functions read the full XMP tree, the Dublin Core scheme, and the Photoshop scheme, then write copyright, creator, and keyword values back. The examples are for developers wiring Adobe assets into digital-asset-management ingestion, search, or licensing pipelines.
 
 ## The Challenge
 
@@ -31,7 +31,7 @@ The write functions in this repo create missing schemes before setting values, w
 ## Prerequisites
 
 - **Python 3** – any actively supported CPython release with pip
-- **GroupDocs.Metadata package** – `pip install groupdocs-metadata-net==26.5` (or `pip install -r requirements.txt`)
+- **GroupDocs.Metadata package** – `pip install groupdocs-metadata-net==26.9.0` (or `pip install -r requirements.txt`)
 - **License (optional)** – `main.py` runs in evaluation mode when `LICENSE_PATH` does not point at a `.lic` file
 
 ## Repository Structure
@@ -57,7 +57,7 @@ manage-xmp-in-psd-and-ai-files-python/
 ```
 
 - **main.py** – runs the five functions against `sample.psd` and asserts the written values persist
-- **requirements.txt** – pins `groupdocs-metadata-net==26.5`
+- **requirements.txt** – pins `groupdocs-metadata-net==26.9.0`
 - **methods/read_xmp_metadata.py** – full XMP snapshot as a name → value dict
 - **methods/read_dublin_core_properties.py** – the dc:* interoperability fields
 - **methods/read_photoshop_scheme_properties.py** – photoshop:* editorial and location fields

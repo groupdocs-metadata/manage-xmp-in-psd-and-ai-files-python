@@ -1,1 +1,1 @@
-groupdocs-metadata-net==26.5
+groupdocs-metadata-net==26.9.0
